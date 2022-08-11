@@ -19,7 +19,7 @@ etree = html.etree
 
 # 根据路径获取所有的子目录
 def find_child_path_by_path(path):
-    v = requests.get(url=path, headers={"UserAgent": user_agent}).text
+    v = requests.get(url=path, headers={"User-Agent": user_agent}).text
     # 获取xpath对象
     html = etree.HTML(v)
     a_list = html.xpath("/html//a/@href")
