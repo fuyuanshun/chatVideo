@@ -3,22 +3,11 @@ from concurrent.futures import ThreadPoolExecutor
 from lxml import html
 import urllib.request
 import os
+from com.fys.conf.configuration import init_path
+from com.fys.conf.configuration import save_path
+from com.fys.conf.configuration import user_agent
+from com.fys.conf.configuration import thread_count
 
-# ---------------------------------------------- #
-
-# 爬取的地址
-init_path = "http://116.204.156.73:7772/plate/"
-
-# 爬取文件的存储路径
-save_path = "D:/chat_videos2/"
-
-# Headers-UserAgent
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 " \
-             "Safari/537.36 "
-
-# 线程数量
-thread_count = 10
-# ---------------------------------------------- #
 
 # -------------------系统变量--------------------- #
 
